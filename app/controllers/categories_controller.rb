@@ -24,7 +24,7 @@ class CategoriesController < ApplicationController
 		@category = Category.find(params[:id])
 	end
 
-	def create
+	def update
 		@category = Category.find(params[:id])
 		if @category.update(category_params)
 			flash[:success] = "Your category has been updated successfully"
